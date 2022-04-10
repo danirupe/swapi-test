@@ -13,7 +13,7 @@ const Search = (props) => {
 
   return (
     <div className='search'>
-      <div className='search__container container grid'>
+      <div className='search__container grid'>
         <div className='search__select'>
           <label className='search__label'>Search by: </label>
           <select name='searchFilter' onChange={handleFilter}>

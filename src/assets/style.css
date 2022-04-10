@@ -1,7 +1,10 @@
 /*==================== REUSABLE ====================*/
 .container {
   max-width: 960px;
-  margin: 0 auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: var(--mb-1-5);
+  margin-right: var(--mb-1-5);
 }
 .section {
   padding-bottom: 3rem;
@@ -170,4 +173,37 @@
 .table__button {
   cursor: pointer;
   border-bottom: 1px solid #ddd;
+}
+
+/*==================== MEDIA QUERIES ====================*/
+/* For medium devices */
+@media screen and (max-width: 568px) {
+  .search__container {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+  .search__select {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 568px) and (max-width: 967px) {
+  .search__container {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .container {
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+  }
+}
+
+/* For large devices */
+@media screen and (min-width: 1024px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
