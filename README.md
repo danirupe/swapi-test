@@ -4,7 +4,9 @@ This project consists of creating a simple one-page application with a list of p
 
 ## Requirements
 
-The project should have a table that contains a list of users with the following columns: | Name | Height | Mass | Created | Edited | Planet Name | | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+The project should have a table that contains a list of users with the following columns:  
+| Name | Height | Mass | Created | Edited | Planet Name |  
+| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
 
 When the user clicks on the planet name link a popup is displayed showing the following information regarding the planet:
 
