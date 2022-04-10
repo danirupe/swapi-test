@@ -1,0 +1,203 @@
+/*==================== GOOGLE FONTS ====================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600&display=swap');
+
+/*==================== VARIABLES CSS ====================*/
+.light,
+:root {
+  /*========== Colors ==========*/
+  --hue-color: 54;
+
+  /* HSL color mode */
+  --first-color: hsl(var(--hue-color), 100%, 50%);
+  --second-color: hsl(var(--hue-color), 69%, 61%);
+
+  --text-color: hsl(var(--hue-color), 8%, 9%);
+
+  --body-color: hsl(var(--hue-color), 14%, 96%);
+  --container-color: #fff;
+
+  /*========== Font and typography ==========*/
+  --body-font: 'Poppins', sans-serif;
+
+  /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+  --big-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.25rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.75rem;
+
+  --text-center: center;
+
+  /*========== Font weight ==========*/
+  --font-thin: 100;
+  --font-extra-light: 200;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /*========== Margin Bottom ==========*/
+  /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+  --mb-0-25: 0.25rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+
+  /*========== Margin Top ==========*/
+  /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+  --mt-0-25: 0.25rem;
+  --mt-0-5: 0.5rem;
+  --mt-0-75: 0.75rem;
+  --mt-1: 1rem;
+  --mt-1-5: 1.5rem;
+  --mt-2: 2rem;
+  --mt-2-5: 2.5rem;
+  --mt-3: 3rem;
+
+  /*========== Margin Right ==========*/
+  --mr-0-5: 0.5rem;
+  --mr-1: 1rem;
+  --mr-1-5: 1.5rem;
+  --mr-2: 2rem;
+}
+
+/*========== Variables Dark theme ==========*/
+body.dark {
+  /* HSL color mode */
+  --first-color-second: hsl(var(--hue-color), 30%, 8%);
+
+  --text-color: hsl(var(--hue-color), 8%, 98%);
+
+  --body-color: hsl(var(--hue-color), 28%, 6%);
+  --container-color: hsl(var(--hue-color), 0%, 24%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+/* Images */
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+}
+
+/* a */
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+/* p > a */
+p a {
+  display: inline;
+}
+
+/* <li> */
+li {
+  list-style-type: none;
+}
+
+/* Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Text tags */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+blockquote,
+i,
+b,
+u,
+em {
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Quote pseudoelements */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/* Selected text */
+::-moz-selection {
+  background-color: var(--second-color);
+  color: var(--first-color);
+}
+::selection {
+  background-color: var(--second-color);
+  color: var(--first-color);
+}
+
+/* Forms */
+form,
+input,
+textarea,
+select,
+button,
+label {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  background-color: transparent;
+  display: block;
+}
+
+/* Tables */
+table,
+tr,
+td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* SVG */
+svg {
+  width: 100%;
+  display: block;
+}
+/* Tipography */
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  font-family: var(--body-font);
+  background-color: var(--body-color);
+  color: var(--text-color);
+  line-height: 1.4em;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
